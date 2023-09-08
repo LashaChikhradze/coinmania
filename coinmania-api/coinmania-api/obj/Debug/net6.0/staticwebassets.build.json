@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4CZJLveutFiNJ3d0yUf8hiSeEpXgzTpb9MAPrSWvOZ8=",
+  "Source": "coinmania-api",
+  "BasePath": "_content/coinmania-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

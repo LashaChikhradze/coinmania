@@ -1,0 +1,15 @@
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/bin/Debug/net6.0/BusinessLogicLayer.deps.json
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/bin/Debug/net6.0/BusinessLogicLayer.dll
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/bin/Debug/net6.0/BusinessLogicLayer.pdb
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/bin/Debug/net6.0/DataAccessLayer.dll
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/bin/Debug/net6.0/DataAccessLayer.pdb
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.csproj.AssemblyReference.cache
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.AssemblyInfoInputs.cache
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.AssemblyInfo.cs
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.csproj.CoreCompileInputs.cache
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.csproj.CopyComplete
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.dll
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/refint/BusinessLogicLayer.dll
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/BusinessLogicLayer.pdb
+/Users/lasha/Projects/coinmania-api/BusinessLogicLayer/obj/Debug/net6.0/ref/BusinessLogicLayer.dll
