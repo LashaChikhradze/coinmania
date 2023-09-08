@@ -1,0 +1,118 @@
+:host {
+    h4  {
+        margin: 0;
+    }
+    .wrapper {
+        padding-top: 75px;
+
+        @media only screen and (max-width: 478px) {
+            padding-top: 111px;
+        }
+
+        @media only screen and (max-width: 320px) {
+            padding-top: 137px;
+        }
+
+        .header-wrapper {
+
+            .navbar {
+                width: 100%;
+                max-width: calc(2000px - 40px);
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        
+                .container-fluid {
+        
+                    .logo-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+        
+                    .user-info-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+        
+                        h4 {
+                            margin: 0;
+                        }
+                    }
+        
+                    .actions-wrapper {
+                        .profile-button-wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            span {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+    
+                    form {
+    
+                        .form-group {
+                            
+                            .row {
+            
+                                .form-floating {
+                                    padding: 0px;
+                                    margin-right: calc(var(--bs-gutter-x) * .5);
+                                    margin-left: calc(var(--bs-gutter-x) * .5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .filter-wrapper {
+
+            .navbar {
+
+                form {
+
+                    .form-group {
+                        
+                        .row {
+        
+                            .form-floating {
+                                padding: 0px;
+                                margin-right: calc(var(--bs-gutter-x) * .5);
+                                margin-left: calc(var(--bs-gutter-x) * .5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .body-wrapper {
+            margin-top: 50px;
+    
+            .body-content-wrapper {
+                
+                .card {
+
+                    max-width: 250px;
+                    min-height: 200px;
+                    margin: auto;
+
+                    .card-body {
+
+                        display: flex;
+                        justify-content: end;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }    
+    }
+}

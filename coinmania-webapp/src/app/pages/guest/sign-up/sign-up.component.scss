@@ -1,0 +1,20 @@
+:host {
+
+    .container-sm {
+
+        form {
+
+            .form-group {
+                
+                .row {
+
+                    .form-floating {
+                        padding: 0px;
+                        margin-right: calc(var(--bs-gutter-x) * .5);
+                        margin-left: calc(var(--bs-gutter-x) * .5);
+                    }
+                }
+            }
+        }
+    }
+}

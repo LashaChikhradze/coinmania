@@ -1,0 +1,27 @@
+<div class="container-sm">
+    <h1 class="mb-4">Sign in</h1>
+    <form class="mb-4" id="form" [formGroup]="form" (ngSubmit)="login()">
+        <div class="form-floating mb-3">
+            <input type="string" class="form-control" id="phone" placeholder="Phone Number" aria-describedby="phoneHelp" formControlName="phone">
+            <label for="phone" class="form-label">Phone Number</label>
+            <div id="phoneHelp" class="form-text">
+                Phone number must contain 9 digits.
+            </div>
+        </div>
+        <div class="form-floating">
+            <input type="password" id="password" class="form-control" placeholder="Password" aria-describedby="passwordHelpBlock" formControlName="password">
+            <label for="password" class="form-label">Password</label>
+            <div id="passwordHelpBlock" class="form-text">
+                Your password must be 6-15 characters long.
+            </div>
+        </div>
+    </form>
+    <div class="actions d-flex justify-content-end">
+        <button class="btn btn-link me-3" (click)="toSignUp()">
+            Sign up
+        </button>
+        <button form="form" class="btn btn-outline-success" [disabled]="(isFormProcessing | async) || !form.valid">
+            {{ (isFormProcessing | async) ? 'loading...' : 'submit' }}
+        </button>
+    </div>
+</div>

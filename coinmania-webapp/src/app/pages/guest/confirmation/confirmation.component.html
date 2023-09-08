@@ -1,0 +1,16 @@
+
+<div class="container-sm">
+    <h1 class="mb-4">sms confirmation</h1>
+    <form class="mb-4" id="form" [formGroup]="form" (ngSubmit)="confirm()">
+        <div class="form-floating">
+            <input type="text" id="token" class="form-control" placeholder="Token" formControlName="token">
+            <label for="token" class="form-label">Token</label>
+            <mat-error *ngIf="formErrorHandler?.showOn('token', 'required')">Required field!</mat-error>
+        </div>
+    </form>
+    <div class="actions d-flex justify-content-end">
+        <button form="form" class="btn btn-outline-success" [disabled]="(isFormProcessing | async) || !form.valid">
+            {{ (isFormProcessing | async) ? 'loading...' : 'submit' }}
+        </button>
+    </div>
+</div>

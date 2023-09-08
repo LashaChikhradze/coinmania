@@ -1,0 +1,70 @@
+<div class="wrapper">
+    <div class="header-wrapper">
+        <nav class="navbar navbar-default fixed-top bg-body-tertiary">
+            <div class="container-fluid justify-content-center justify-content-sm-between">
+                <a class="navbar-brand" routerLink="/member">
+                    <img src="/assets/COINMANIA.png" width="140" />
+                </a>
+                <div class="user-info-wrapper">
+                    <h4 class="pe-2">{{ user.firstName }}</h4>
+                    <h4>{{ user.lastName }}</h4>
+                </div>
+                <div class="logout-wrapper">
+                    <button (click)="onLogout()" class="btn btn-light">
+                        Log out
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="filter-wrapper">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container justify-content-center justify-content-lg-between">
+                <div class="d-flex justify-content-start align-items-center flex-wrap flex-md-nowrap">
+                    <h4 class="me-4 mb-2 mb-md-0">Filters: </h4>
+                    <form class="d-flex" role="search" id="form" [formGroup]="form" (ngSubmit)="onSearch()">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-12 mb-2 mb-md-0 form-floating">
+                                    <input type="search" id="phone" placeholder="Phone Number" class="form-control" formControlName="phone">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                                <div class="col-md-3 col-sm-12 mb-2 mb-md-0 form-floating">
+                                    <input type="search" id="firstname" placeholder="First Name" class="form-control" formControlName="firstname">
+                                    <label for="firstname">First name</label>
+                                </div>
+                                <div class="col-md-3 col-sm-12 mb-2 mb-lg-0 form-floating">
+                                    <input type="search" id="lastname" placeholder="Last Name" class="form-control" formControlName="lastname">
+                                    <label for="lastname">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="actions">
+                    <button form="form" class="btn btn-outline-success" [disabled]="isFormProcessing | async">
+                        {{ (isFormProcessing | async) ? 'loading...' : 'search' }}
+                    </button>
+                </div>
+              </div>
+        </nav>
+    </div>
+    <div class="body-wrapper">
+        <div class="body-content-wrapper container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let user of data">
+                    <div class="card">
+                        <img src="https://icon-library.com/images/no-user-image-icon/no-user-image-icon-29.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-start flex-column">
+                                <h5 class="card-title">{{ user.firstName }}</h5>
+                                <h5 class="card-title">{{ user.lastName }}</h5>
+                            </div>
+                            <p>Tel: <strong>{{ user.phone }}</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
